@@ -16,6 +16,7 @@ Conversational AI for intelligent movie search and recommendations
 - **Data**: [TMDB API](https://www.themoviedb.org/)
 - **Embeddings**: `all-MiniLM-L6-v2` (Sentence-Transformers)
 - **Vector Search**: FAISS
+- **Re-ranking**: `ms-marco-MiniLM-L-6-v2` (Cross-Encoder)
 - **LLM**: Ollama 
 - **UI**: Gradio
 - **Others**: pandas, numpy, python-dotenv
@@ -84,9 +85,8 @@ tmdb-chatbot/
 
 ## Improvements & TODOs
 
-- Add `filter_movies()` helper function (currently missing)
+- Add `filter_movies()` helper function
 - Implement true genre-balanced data collection
-- Add BM25 or cross-encoder reranking option
-- Pre-built index download (so users don't need to fetch 4000 movies)
--  Docker support
+- Implement a chunking algorithm 
+- Docker support
 - More advanced filtering (cast, director, language)
