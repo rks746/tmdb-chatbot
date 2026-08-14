@@ -1,0 +1,2 @@
+# contains TMBD and Groq API keys
+.env
